@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Together \u2014 YouTube Multiplayer",
+  "version": "0.1.0",
+  "description": "Synced YouTube watch parties and study rooms with chat, notes, permissions and voice.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.youtube.com/*",
+    "http://localhost:3100/*",
+    "http://127.0.0.1:3100/*",
+    "https://*.onrender.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

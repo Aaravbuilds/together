@@ -1,0 +1,6 @@
+{
+ "name":"together-youtube-extension","version":"0.1.0","private":true,"type":"module",
+ "scripts":{"build":"node build.mjs","watch":"node build.mjs --watch"},
+ "dependencies":{"socket.io-client":"^4.8.1"},
+ "devDependencies":{"esbuild":"^0.25.0"}
+}
